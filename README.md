@@ -1,5 +1,6 @@
 # CNN-for-object-detection
 edge-detection of any object
+
 Import Libraries: Import the necessary libraries, including torch for PyTorch, models and transforms from torchvision, and cv2 for OpenCV.
 Load Pre-trained Model: Load the pre-trained Faster R-CNN model with a ResNet-50 backbone using models.detection.fasterrcnn_resnet50_fpn(pretrained=True). This model is pre-trained on the COCO dataset and is capable of detecting objects in images.
 Load and Preprocess Image: Load an image using OpenCV (cv2.imread) and convert it from BGR to RGB format. Then, use F.to_tensor from torchvision.transforms to convert the image to a PyTorch tensor and add a batch dimension using unsqueeze(0).
